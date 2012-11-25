@@ -15,7 +15,6 @@
     "start": "brunch watch --server"
   },
   "dependencies": {
-    "lodash": "0.10.0",
     "javascript-brunch": ">= 1.0 < 1.4",
     "sass-brunch": ">= 1.0 < 1.4",
 
