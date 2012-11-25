@@ -1,0 +1,125 @@
+@import "compass/reset";
+@import "compass/css3/inline-block";
+@import "compass/css3";
+
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	background: #ffffff url(/images/gray_jean.png);
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size: 12px;
+	padding-bottom: 80px;
+}
+
+.wrapper {
+	background: #ffffff;
+	padding: 20px;
+	margin: 0 auto;
+	width: 800px;
+}
+
+nav {
+	@extend .wrapper;
+	background: #DAD7C7;
+
+	ul {
+		li {
+			@include inline-block;
+			margin-right: 10px;
+
+			a {
+				background: #58838C;
+				color: #ffffff;
+				font-size: 13px;
+				padding: 0 12px;
+				text-decoration: none;
+				line-height: 24px;
+				@include border-radius(12px);
+				@include inline-block;
+				@include text-shadow(rgba(blue, 0.2) 1px 1px 0);
+
+				&:hover {
+					background: #BF5841;
+				}
+
+				&:active {
+					background: #A61C1C;
+				}
+			}
+
+			&.active a{
+				background: #A61C1C;
+				@include box-shadow(inset 1px 1px 1px rgba(black, 0.3));
+			}
+		}
+	}
+}
+
+section {
+	@extend .wrapper;
+	padding: 20px 0 0px 20px;
+
+	$image_width: 200px;
+	$image_height: 150px;
+	$padding: 20px;
+
+	ol {
+		li {
+			background: #ffffff url(/images/gray_jean.png);
+			margin: 0 20px 20px 0;
+			padding: $padding;
+			width: $image_width + ($padding * 2);
+			@include inline-block;
+			@include border-radius(5px);
+
+			figure {
+				position: relative;
+
+				.shadow {
+					position: absolute;
+					width: $image_width;
+					height: $image_height;
+					@include box-shadow(inset 0px 0px 10px rgba(black, 0.3));
+				}
+
+				img {
+					width: $image_width;
+					height: $image_height;
+				}
+
+				figcaption {
+					margin-top:10px;
+
+					.button {
+						color: #777;
+						font-size: 11px;
+						margin-right: 10px;
+
+						i {
+							font-size: 13px;
+							margin-right: 2px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	@extend .wrapper;
+	background: rgba(white, 0.5);
+	color: #999;
+	font-size: 13px;
+	text-align: center;
+	line-height: 30px;
+
+	.spinner {
+		width: 30px;
+		height: 30px;
+		margin-right: 5px;
+		@include inline-block;
+	}
+}

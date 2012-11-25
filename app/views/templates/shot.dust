@@ -1,0 +1,12 @@
+<figure>
+	<div class="shadow"></div>
+	<img src="{image_teaser_url}" alt="{title}">
+	<figcaption>
+		{@if cond="'{likes_count}' > 0"}
+			<span class="button"><i class="icon-star"></i>{likes_count} Like{@if cond="'{likes_count}' > 1"}s{/if}</span>
+		{/if}
+		{@if cond="'{comments_count}' > 0"}
+			<span class="button"><i class="icon-comment"></i>{comments_count} Comment{@if cond="'{comments_count}' > 1"}s{/if}</span>
+		{/if}
+	</figcaption>
+</figure>

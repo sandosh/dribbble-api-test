@@ -1,0 +1,31 @@
+{
+  "author": "Sandosh Vasudeven",
+  "name": "dribbble-test",
+  "description": "dribbble test",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.10"
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "lodash": "0.10.0",
+    "javascript-brunch": ">= 1.0 < 1.4",
+    "sass-brunch": ">= 1.0 < 1.4",
+
+    "css-brunch": ">= 1.0 < 1.4",
+
+    "dustjs-brunch": "git://github.com/sandosh/dustjs-brunch.git",
+
+    "compass-brunch": "git://github.com/anthonyshort/compass-brunch.git",
+
+    "uglify-js-brunch": ">= 1.0 < 1.4",
+    "clean-css-brunch": ">= 1.0 < 1.4"
+  }
+}
