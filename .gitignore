@@ -29,5 +29,5 @@ tmp/
 app/
 compass.rb
 config.coffee
-package.json
 vendor/
+_site
