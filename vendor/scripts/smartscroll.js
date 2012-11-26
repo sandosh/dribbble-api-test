@@ -26,7 +26,7 @@ $event.special.smartscroll = {
 	  if (scrollTimeout) { clearTimeout(scrollTimeout); }
 	  scrollTimeout = setTimeout(function() {
 	    jQuery.event.handle.apply( context, args );
-	  }, execAsap === "execAsap"? 0 : 100);
+	  }, execAsap === "execAsap"? 0 : 50);
 	}
 };
 

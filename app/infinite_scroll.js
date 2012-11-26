@@ -1,5 +1,5 @@
 $(function() {
-	var startLoadingAtPx = 20;
+	var startLoadingAtPx = 40;
 	var $document = $(document);
 	var $window = $(window);
 
@@ -8,7 +8,7 @@ $(function() {
 		return scrollTop + 40 >= $document.height() - $window.height();
 	};
 
-	$window.on('smartscroll', function smartscrollCallback() {
+	$window.on('scroll', function smartscrollCallback() {
 		if (checkIfReachingEnd()) {
 			Backbone.Mediator.publish('scroller.bottom');
 		}

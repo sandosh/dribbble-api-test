@@ -31,7 +31,7 @@ module.exports = Backbone.View.extend({
 		this.collection = collections[list_type];
 		this.$el.hide();
 		if (this.collection.loading) {
-			this.collection.on('reset', this.render, this);			
+			this.collection.on('reset', this.render, this);
 		} else {
 			this.render();
 		}
