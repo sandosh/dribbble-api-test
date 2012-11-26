@@ -26,4 +26,8 @@ node_modules/
 tmp/
 
 # Brunch output folder.
-public/
+app/
+compass.rb
+config.coffee
+package.json
+vendor/
